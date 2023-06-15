@@ -17,6 +17,7 @@ class home extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final name = ref.watch(intprovider);
+    final normal = ref.watch(normalprovider);
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
@@ -27,7 +28,8 @@ class home extends ConsumerWidget {
             child: TextField(
               onSubmitted: (value) => change(value, ref),
             ),
-          )
+          ),
+          Text(normal),
         ]),
       ),
     );

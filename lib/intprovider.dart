@@ -1,6 +1,10 @@
 import 'package:riverpod/riverpod.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-final intprovider = StateProvider((ref) {
+final normalprovider = Provider((ref) {
   return "simarprovided";
+});
+
+final intprovider = StateProvider((ref) {
+  return "simarstateprovided";
 });
