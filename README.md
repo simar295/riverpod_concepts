@@ -1,4 +1,4 @@
-# riverpod
+# riverpod states
 
 A new Flutter project.
 
